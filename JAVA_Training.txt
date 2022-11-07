@@ -1,0 +1,256 @@
+//Hello World (println -> print in new line)
+public class Main{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World");
+	}
+}
+
+//Printing things in same line (print -> print in same line)
+public class Main{
+	public static void main(String[] args)
+	{
+		System.out.print("Hello World! ");
+		System.out.print("My name is Palak!");
+	}
+}
+
+//Java Variables/ Data Types
+public class Main {
+     public static void main(String[] args) 
+     {
+          String a = "Palak Agarwal";
+          System.out.println(a);
+          int b = 10;
+          System.out.println(b);
+          double c = 19.99;
+          System.out.println(c);
+          char d = 'a';
+          System.out.println(d);
+          boolean e = true;
+          System.out.println(e);
+          float f = 20.76f; 
+          /*we need to add f at the end of float or it shows error*/
+          System.out.println(f);
+     }
+}
+
+//Final variable
+public class Main {
+     public static void main(String[] args) 
+     {
+          final int b = 100;
+ /*These shows error final variable can not be further assigned another value*/
+          b = 436;
+          System.out.println(b);
+     }
+}
+
+//Adding 2 strings (CONCAT or + both can be used)
+public class Main {
+     public static void main(String[] args) 
+     {
+          String first = "Palak";
+          String last = " Agarwal";
+          String full = first + last;
+          System.out.println(full); //System.out.println(first.concat(last));
+     }
+}
+
+//Adding two variablespublic class Main {
+     public static void main(String[] args) 
+     {
+          int x = 5;
+          int y = 6;
+          System.out.println(x+y);
+     }
+}
+
+//Adding multiple integers
+public class Main {
+     public static void main(String[] args) 
+     {
+          int x = 5;
+          int y = 6;
+          int z = 10;
+          System.out.println(x+y+z);
+     }
+}
+
+//Assigning same value to multiple variables
+public class Main {
+     public static void main(String[] args) 
+     {
+          int x,y,z;
+          x = y = z = 10;
+          System.out.println(x+y+z);
+     }
+}
+
+//Changing datatype
+public class Main {
+     public static void main(String[] args) 
+     {
+          double mydouble = 9.78d;
+          int myInt = (int) mydouble;
+          System.out.println(myInt);
+     }
+} //OUTPUT = 9
+
+/*The byte data type can store whole numbers from -128 to 127. This can be used instead of int or other integer types to save memory when you are certain that the value will be within -128 and 127*/
+public class Main {
+     public static void main(String[] args) 
+     {
+          byte myNum = 100;
+          System.out.println(myNum);
+     }
+}
+
+/*The short data type can store whole numbers from -32768 to 32767*/
+public class Main {
+     public static void main(String[] args) 
+     {
+          short myNum = 4000;
+          System.out.println(myNum);
+     }
+}
+
+/*The int data type can store whole numbers from -2147483648 to 2147483647. In general, and in our tutorial, the int data type is the preferred data type when we create variables with a numeric value.*/
+public class Main {
+     public static void main(String[] args)
+     {
+          int myNum = 400000;
+          System.out.println(myNum);
+     }
+}
+
+/*The long data type can store whole numbers from -9223372036854775808 to 9223372036854775807. This is used when int is not large enough to store the value. Note that you should end the value with an "L"*/
+public class Main {
+     public static void main(String[] args)
+     {
+          long myNum = 400000000000L;
+          System.out.println(myNum);
+     }
+}
+
+/*
+In Java, there are two types of casting:
+
+Widening Casting (automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double
+
+Narrowing Casting (manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char -> short -> byte */
+
+//Widening Casting
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt);      // Outputs 9
+    System.out.println(myDouble);   // Outputs 9.0
+  }
+}
+
+//Narrowing Casting
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78d;
+    int myInt = (int) myDouble; // Manual casting: double to int
+
+    System.out.println(myDouble);   // Outputs 9.78
+    System.out.println(myInt);      // Outputs 9
+  }
+}
+
+//Finding length of a string
+public class Main {
+     public static void main(String[] args) 
+     {
+          String greeting = "Hello";
+          System.out.println("The length of string = "+greeting.length());
+     }
+}
+
+//Changing String to Upper or Lower Case
+public class Main {
+     public static void main(String[] args) 
+     {
+          String greeting = "Hello World";
+          System.out.println(greeting.toUpperCase());
+          System.out.println(greeting.toLowerCase());
+     }
+}
+
+//Finding a Character in a String
+public class Main {
+     public static void main(String[] args) 
+     {
+          String text = "Please locate where 'locate' occurs!";
+          System.out.println(text.indexOf("locate"));
+     }
+} //OUTPUT: 7
+
+//Using Double Qoutes in a String
+public class Main {
+     public static void main(String[] args) 
+     {
+          String text = "We are the so-called \"Vikings\" from the north.";
+          System.out.println(text);
+     }
+}
+
+//Using \ in a String
+public class Main {
+  public static void main(String[] args) {
+    String txt = "The character \\ is called backslash.";
+    System.out.println(txt);
+  }
+}
+
+//Finding Max and Min
+public class Main {
+     public static void main(String[] args) 
+     {
+           int x = 5, y = 10;
+           System.out.println(Math.max(x,y));
+           System.out.println(Math.min(x,y));
+     }
+}
+
+//Finding Square Root (sqrt())
+public class Main {
+     public static void main(String[] args) 
+     {
+           int x = 25;
+           System.out.println(Math.sqrt(x));
+     }
+}
+
+//Absolute positive value (abs.())
+public class Main {
+     public static void main(String[] args) 
+     {
+           System.out.println(Math.abs(-4.7));
+     }
+}
+
+//Print a random number between 0 and 100
+public class Main {
+     public static void main(String[] args) 
+     {
+           int random_num = (int)(Math.random() * 101);
+           System.out.print(random_num);
+     }
+}
+
+//True or False
+public class Main {
+     public static void main(String[] args) 
+     {
+           int x=5, y= 10;
+           System.out.print(x>y);
+     }
+}
+
